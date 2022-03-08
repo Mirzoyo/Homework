@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.header {
+  background-image: url("https://images.unsplash.com/photo-1526894826544-0f81b0a5796d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
+  height: 95vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header_overlay {
+  background-color: rgba(0, 0, 0, 0.517);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.nav_container {
+  background-color: #232323;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  color: white;
+  width: 85%;
+  margin: auto;
+}
+nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+nav > ul > li {
+  margin: 0 25px;
+  cursor: pointer;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  font-size: 10pt;
+}
+
+nav > ul > li:hover {
+  border-bottom: 2px solid red;
+  height: 100%;
+}
+
+.menu_icon {
+  display: none;
+  color: #f33f3f;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 20px;
+}
+
+.header_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.header_content > p {
+  color: #f33f3f;
+  font-weight: 600;
+  font-size: 15pt;
+  letter-spacing: 2px;
+}
+
+.header_content > h1 {
+  font-size: 44pt;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: white;
+}
+
+.products_list {
+  height: 1000px;
+}
+
+@media only screen and (max-width: 800px) {
+  nav > ul {
+    display: none;
+  }
+  .menu_icon {
+    display: block;
+  }
+}
